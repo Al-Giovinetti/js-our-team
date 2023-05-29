@@ -7,10 +7,12 @@
 .flex{
     display: flex;
 }
+body{
+    background-image: url(../img/sfondo1.webp);
+}
 
 body>div{
     width: 800px;
-    background-color: yellow;
     margin: auto;
 }
 
@@ -18,11 +20,18 @@ div.container>h1{
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
-    padding: 1rem 0;
+    padding: 1rem 0; 
+    margin: 0.5rem 10rem;  
+     background-color: yellowgreen;
+     border-radius: 15px;
 }
 
 div.container>p{
     padding: 1rem 2rem;
+    margin: 0 2rem;
+    background-color: yellowgreen;
+    border-radius: 15px;
+    text-align: center;
 }
 
 div.grid{
@@ -35,4 +44,18 @@ div.grid{
     flex-direction: column-reverse;
     text-align: center;
     margin: 1rem;
+    background-color: yellowgreen;
+    border-radius: 15px;
+    padding-bottom: 0.5rem;
+
+}
+
+.box-style img{
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.box-style>:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: bold;
 }
