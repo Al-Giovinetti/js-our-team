@@ -37,15 +37,14 @@ const ourTeam = [
     }
 ]
 
-const ulElement = document.querySelector("ul");
+const containerElement = document.querySelector("div");
 
 for(let i=0 ; i < ourTeam.length ; i++){
     const subject = ourTeam[i];
     //console.log(subject.name,subject.surname,subject.role,subject.img) 
     
-    const liElement = document.createElement("li")
-    liElement.classList.add("li-style")
-    liElement.innerHTML = subject.name +" "+ subject.surname +" "+ subject.role +" "+ subject.img
-    ulElement.append(liElement)
+    const boxElement = document.createElement("div")
+    boxElement.innerHTML = subject.name +" "+ subject.surname +" "+ subject.role +" "+ `<img src="img/${subject.img}">`
+    containerElement.append(boxElement)
 }
 
