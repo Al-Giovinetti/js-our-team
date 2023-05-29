@@ -41,6 +41,11 @@ const ulElement = document.querySelector("ul");
 
 for(let i=0 ; i < ourTeam.length ; i++){
     const subject = ourTeam[i];
-    console.log(subject.name,subject.surname,subject.role,subject.img)  
+    //console.log(subject.name,subject.surname,subject.role,subject.img) 
+    
+    const liElement = document.createElement("li")
+    liElement.classList.add("li-style")
+    liElement.innerHTML = subject.name +" "+ subject.surname +" "+ subject.role +" "+ subject.img
+    ulElement.append(liElement)
 }
 
