@@ -37,4 +37,12 @@ const ourTeam = [
     }
 ]
 
-console.log(ourTeam)
+const ulElement = document.querySelector("ul")
+
+for(let i=0 ; i < ourTeam.length ; i++){
+    let liElement = document.createElement("li")
+    liElement.innerHTML=ourTeam[i]
+    ulElement.append(liElement)
+    console.log(ourTeam[i])
+    console.log("///////////////////////////////////")
+}
