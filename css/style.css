@@ -3,3 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.flex{
+    display: flex;
+}
+
+body>div{
+    width: 800px;
+    background-color: yellow;
+    margin: auto;
+}
+
+div.container>h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+div.container>p{
+    padding: 1rem 2rem;
+}
+
+div.grid{
+    flex-wrap: wrap;
+}
+
+.box-style{
+    width: calc((100% / 3) - 2rem);
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 1rem;
+}

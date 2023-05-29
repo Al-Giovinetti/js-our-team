@@ -33,18 +33,23 @@ const ourTeam = [
         name: "Barbara",
         surname: "Ramos",
         role: "Graphic Designer",
-        img: " barbara-ramos-graphic-designer.jpg"
+        img: "barbara-ramos-graphic-designer.jpg"
     }
 ]
 
-const containerElement = document.querySelector("div");
+const containerElement = document.querySelector("div.grid");
 
 for(let i=0 ; i < ourTeam.length ; i++){
     const subject = ourTeam[i];
     //console.log(subject.name,subject.surname,subject.role,subject.img) 
     
     const boxElement = document.createElement("div")
-    boxElement.innerHTML = subject.name +" "+ subject.surname +" "+ subject.role +" "+ `<img src="img/${subject.img}">`
+    boxElement.classList.add("box-style")
+    boxElement.innerHTML =`
+    <p>${subject.role}</p>
+    <p>${subject.name + " " + subject.surname}</p>
+    <img src="img/${subject.img}">`
+
     containerElement.append(boxElement)
 }
 
