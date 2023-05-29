@@ -9,6 +9,7 @@
 }
 body{
     background-image: url(../img/sfondo1.webp);
+    background-size: cover;
 }
 
 body>div{
