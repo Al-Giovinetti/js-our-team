@@ -53,3 +53,35 @@ for(let i=0 ; i < ourTeam.length ; i++){
     containerElement.append(boxElement)
 }
 
+const btnAdd = document.querySelector("footer > div.container > button")
+const divAdd = document.querySelector("div.add-member")
+btnAdd.addEventListener("click",function() {
+    divAdd.classList.remove("d-none")
+});
+
+const btnFinalAdd = document.getElementById("final-add")
+btnFinalAdd.addEventListener("click",function(){
+    const newName = document.querySelector("input#name")
+    const newRole = document.querySelector("input#role")
+    const newImg = document.querySelector("input#img")
+
+    const newMember = {
+        name: newName.value,
+        role: newRole.value,
+        img: newImg.value
+    }
+
+    ourTeam.push(newMember);
+
+    const newboxElement = document.createElement("div")
+    newboxElement.classList.add("box-style")
+    newboxElement.innerHTML =`
+    <p>${newMember.role}</p>
+    <p>${newMember.name}</p>
+    <img src="img/${newMember.img}">`
+
+    containerElement.append(newboxElement)
+
+    
+})
+

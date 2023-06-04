@@ -7,6 +7,11 @@
 .flex{
     display: flex;
 }
+
+.d-none{
+    display: none;
+}
+
 body{
     background-image: url(../img/sfondo1.webp);
     background-size: cover;
@@ -48,15 +53,45 @@ div.grid{
     background-color: yellowgreen;
     border-radius: 15px;
     padding-bottom: 0.5rem;
-
 }
 
 .box-style img{
     border-radius: 15px;
     margin-bottom: 0.5rem;
+    height: 240px;
 }
 
 .box-style>:nth-child(2){
     font-size: 1.3rem;
     font-weight: bold;
 }
+
+footer{
+    background-color: black;
+    color: white;
+    padding:1rem 0 ;
+}
+
+footer> div.container{
+    text-align: center;
+    width: 220px;
+    margin: auto;
+}
+
+footer button{
+    padding: 0.4rem 0.7rem;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+}
+
+footer .add-member{
+    justify-content: space-around;
+}
+
+.add-member-value{
+    padding-right: 1.5rem;
+}
+
+
+
+
